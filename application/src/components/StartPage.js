@@ -15,7 +15,6 @@ class StartPage extends Component {
             className="chiffer-logo-black"
             alt="chiffer-logo"
           />
-
           <div className="form-container">
             <ProjectNameInput />
           </div>

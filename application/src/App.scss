@@ -1,12 +1,21 @@
+@import '_mixin.scss';
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: $roboto;
+  font-weight: 400; //regular
+}
+
 .App {
   text-align: center;
   background-image: url('./images/background-contentresa.jpg');
-  background-repeat: no-repeat; 
-  background-size:cover; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.chiffer-logo-black{
-
+.chiffer-logo-black {
   height: 10vmin;
 }
 
@@ -20,7 +29,12 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+//form
 
+.form-group {
+  margin: 40px;
+
+  .start-button {
+    margin: 20px;
+  }
+}

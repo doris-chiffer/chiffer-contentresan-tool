@@ -17,7 +17,7 @@ class ProjectName extends Component {
     event.preventDefault();
 
     if (this.state.projectName === '') {
-      this.setState({ error: 'Please enter your name' });
+      this.setState({ error: 'Vad snäll och skriv ett namn' });
     } else {
       //   this.props.handleLogin(this.state.projectName);
       console.log('project:', this.state.projectName);
@@ -37,25 +37,23 @@ class ProjectName extends Component {
       <div className="player-form">
         <form onSubmit={this.submitName}>
           <div className="form-group">
-            <div className="col-5">
-              <label htmlFor="enterPlayerName">Project name:</label>
+            <label htmlFor="enterPlayerName">Project name:</label>
 
-              <input
-                type="text"
-                className="form-control"
-                id="enter-project-name"
-                placeholder="Enter your name"
-                value={this.state.value}
-                onChange={this.handleChange}
-              />
+            <input
+              type="text"
+              className="form-control"
+              id="enter-project-name"
+              placeholder="Enter your name"
+              value={this.state.value}
+              onChange={this.handleChange}
+            />
 
-              <Button type="submit" value="Start">
-                Start{' '}
-              </Button>
-            </div>
+            <Button className="start-button" type="submit" value="Start">
+              Start{' '}
+            </Button>
           </div>
+          <p className="text-danger">{errorMessage}</p>
         </form>
-        <p className="text-danger">{errorMessage}</p>
       </div>
     );
   }
