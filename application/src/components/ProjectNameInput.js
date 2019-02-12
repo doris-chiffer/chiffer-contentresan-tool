@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 
-class PlayerName extends Component {
+class ProjectName extends Component {
   // set the two states for the project name and the error message
   state = {
     projectName: '',
@@ -61,4 +61,4 @@ class PlayerName extends Component {
   }
 }
 
-export default PlayerName;
+export default ProjectName;
