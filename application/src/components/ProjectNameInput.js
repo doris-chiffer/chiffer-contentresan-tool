@@ -28,8 +28,14 @@ class ProjectName extends Component {
     //if its in an error state then display the error message
     // make the errorMessage variable empty so it can change to the message
     let errorMessage = null;
+    let errorIcon = null;
     if (this.state.error) {
-      errorMessage = <p>{this.state.error}</p>;
+      errorMessage = this.state.error;
+      errorIcon = (
+        <span>
+          <i className="fas fa-exclamation-triangle" />
+        </span>
+      );
     }
     return (
       //the form
@@ -55,7 +61,9 @@ class ProjectName extends Component {
               </span>
             </Button>
           </div>
-          <p className="text-danger">{errorMessage}</p>
+          <p className="text-danger">
+            {errorMessage} {errorIcon}
+          </p>
         </form>
       </div>
     );

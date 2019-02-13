@@ -34,6 +34,10 @@ html {
 /*HOME PAGE*/
 
 //form
+.form-container {
+  margin: 20px;
+  padding: 20px;
+}
 
 .form-group {
   margin: 40px;
@@ -53,6 +57,7 @@ html {
       box-shadow: none;
       color: $defaultTextColor;
     }
+
     &:select {
       border: 0;
       background-color: transparent !important;
@@ -65,11 +70,18 @@ html {
     border-color: #34a3a9;
 
     .button-arrow {
-      margin: 5px;
-      padding: 5px;
+      margin: 4px;
+      padding: 4px;
+      font-size: 1.2rem;
     }
+
     &:hover {
       background-color: #34a3a9;
     }
   }
+}
+
+.text-danger {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
