@@ -64,6 +64,10 @@ html {
     background-color: $chifferTurquoise;
     border-color: #34a3a9;
 
+    .button-arrow {
+      margin: 5px;
+      padding: 5px;
+    }
     &:hover {
       background-color: #34a3a9;
     }
