@@ -1,0 +1,71 @@
+@import '_mixin.scss';
+
+/*General styling*/
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: $roboto;
+  font-weight: 400; //regular
+}
+
+.App {
+  text-align: center;
+  background-image: url('../images/background-contentresa.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chiffer-logo-black {
+  height: 10vmin;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/*HOME PAGE*/
+
+//form
+
+.form-group {
+  margin: 40px;
+  color: $defaultTextColor;
+
+  input {
+    background-color: transparent;
+    border-bottom: 1px solid $defaultTextColor !important;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    color: $defaultTextColor;
+
+    &:focus {
+      background-color: transparent;
+      outline: none;
+      box-shadow: none;
+      color: $defaultTextColor;
+    }
+    &:select {
+      border: 0;
+      background-color: transparent !important;
+    }
+  }
+
+  .start-button {
+    margin: 20px;
+    background-color: $chifferTurquoise;
+    border-color: #34a3a9;
+
+    &:hover {
+      background-color: #34a3a9;
+    }
+  }
+}

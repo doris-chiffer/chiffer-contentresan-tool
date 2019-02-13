@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="429px" height="98px" viewBox="0 0 429 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Contentresan_logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Startpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-start" transform="translate(-316.000000, -296.000000)">
+            <g id="Contentresan_logo" transform="translate(316.000000, 296.000000)">
+                <text id="Contentresan" fill="#000000" fill-rule="evenodd" filter="url(#filter-2)" font-family="Roboto-Bold, Roboto" font-size="43" font-weight="bold">
+                    <tspan x="167.456787" y="97">Contentresan</tspan>
+                </text>
+                <image id="Chiffer_logotyp_SVART_stor" x="0" y="0" width="429" height="57" xlink:href="data:image/png;base64,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"></image>
+            </g>
+        </g>
+    </g>
+</svg>
