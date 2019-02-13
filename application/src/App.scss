@@ -61,5 +61,11 @@ html {
 
   .start-button {
     margin: 20px;
+    background-color: $chifferTurquoise;
+    border-color: #34a3a9;
+
+    &:hover {
+      background-color: #34a3a9;
+    }
   }
 }
