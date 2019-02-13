@@ -1,5 +1,7 @@
 @import '_mixin.scss';
 
+/*General styling*/
+
 body,
 html {
   margin: 0px;
@@ -29,10 +31,33 @@ html {
   color: white;
 }
 
+/*HOME PAGE*/
+
 //form
 
 .form-group {
   margin: 40px;
+  color: $defaultTextColor;
+
+  input {
+    background-color: transparent;
+    border-bottom: 1px solid $defaultTextColor !important;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    color: $defaultTextColor;
+
+    &:focus {
+      background-color: transparent;
+      outline: none;
+      box-shadow: none;
+      color: $defaultTextColor;
+    }
+    &:select {
+      border: 0;
+      background-color: transparent !important;
+    }
+  }
 
   .start-button {
     margin: 20px;
