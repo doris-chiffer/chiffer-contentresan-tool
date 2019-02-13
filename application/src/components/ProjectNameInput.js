@@ -50,6 +50,9 @@ class ProjectName extends Component {
 
             <Button className="start-button" type="submit" value="Start">
               Gå vidare
+              <span className="button-arrow">
+                <i className="far fa-arrow-alt-circle-right" />
+              </span>
             </Button>
           </div>
           <p className="text-danger">{errorMessage}</p>
