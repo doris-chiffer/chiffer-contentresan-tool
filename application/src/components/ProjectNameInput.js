@@ -40,18 +40,17 @@ class ProjectName extends Component {
     return (
       //the form
 
-      <div className="player-form">
+      <div className="project-form">
         <form onSubmit={this.submitName}>
           <div className="form-group">
-            <label htmlFor="enterPlayerName">Skriv projektets namn:</label>
+            <label htmlFor="enter-project-name">Skriv projektets namn:</label>
 
             <input
               type="text"
               className="form-control"
-              id="enter-project-name"
-              placeholder="Projektnamn..."
               value={this.state.value}
               onChange={this.handleChange}
+              size="50"
             />
 
             <Button className="start-button" type="submit" value="Start">
