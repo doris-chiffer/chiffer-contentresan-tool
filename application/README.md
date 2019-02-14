@@ -3,7 +3,7 @@
 ### Available Scripts
 
 Run <bold>npm install</bold>
-When you first run the application
+When you first run the application to install all the dependencies.
 
 In the project directory, you can run:
 
