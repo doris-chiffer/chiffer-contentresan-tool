@@ -41,12 +41,12 @@ class ToolNavbar extends Component {
                 </DropdownToggle>
 
                 <DropdownMenu>
-                  <DropdownItem className="col">Introduktion</DropdownItem>
-                  <DropdownItem className="col">Utvärdering</DropdownItem>
-                  <DropdownItem className="col">Köp</DropdownItem>
-                  <DropdownItem className="col">Efterköp</DropdownItem>
-                  <DropdownItem className="col">Lojaliterts lopp</DropdownItem>
-                  <DropdownItem className="col">Trigger</DropdownItem>
+                  <DropdownItem>Introduktion</DropdownItem>
+                  <DropdownItem>Utvärdering</DropdownItem>
+                  <DropdownItem>Köp</DropdownItem>
+                  <DropdownItem>Efterköp</DropdownItem>
+                  <DropdownItem>Lojaliterts lopp</DropdownItem>
+                  <DropdownItem>Trigger</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
