@@ -30,8 +30,8 @@ class ToolNavbar extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Navbar light expand="md">
+          <NavbarBrand href="/">Chiffer Contentresan</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -39,11 +39,14 @@ class ToolNavbar extends Component {
                 <DropdownToggle nav caret>
                   LÄGG TILL STEG
                 </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
+
+                <DropdownMenu>
+                  <DropdownItem className="col">Introduktion</DropdownItem>
+                  <DropdownItem className="col">Utvärdering</DropdownItem>
+                  <DropdownItem className="col">Köp</DropdownItem>
+                  <DropdownItem className="col">Efterköp</DropdownItem>
+                  <DropdownItem className="col">Lojaliterts lopp</DropdownItem>
+                  <DropdownItem className="col">Trigger</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>

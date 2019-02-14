@@ -97,3 +97,37 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/*NAVBAR*/
+
+.navbar {
+  background-color: $navbarColor;
+  font-weight: 300; //light
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #939ca4;
+
+  &:hover {
+    color: $defaultWhite;
+  }
+}
+
+//dropdown menu
+
+li.dropdown {
+  position: static;
+  float: right;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.dropdown-menu > li {
+  display: inline-block;
+}
+
+.dropdown-item {
+  display: inline;
+}
