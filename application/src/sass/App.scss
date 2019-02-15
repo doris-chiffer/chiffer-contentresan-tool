@@ -105,6 +105,12 @@ html {
 .navbar {
   background-color: $navbarColor;
   font-weight: 300; //light
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.nav-item {
+  margin: 10px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -113,6 +119,14 @@ html {
   &:hover {
     color: $defaultWhite;
   }
+}
+
+.vertical-align-middle {
+  vertical-align: middle; //Keeps the icons the same line as text
+}
+
+.padding-bottom-3 {
+  padding-bottom: 3px; //Keeps the icons the same line as text
 }
 
 //dropdown menu
@@ -143,20 +157,20 @@ li.dropdown {
 
 .dropdown-item {
   display: inline;
-  text-align: center;
+  letter-spacing: 2px;
 
   &:hover {
     background-color: transparent;
   }
 }
 
-/*desktop*/
+/*DESKTOP*/
 
 @media screen and (min-width: 768px) {
   @import '_desktop.scss';
 }
 
-/*mobile*/
+/*MOBILE*/
 
 @media screen and (max-width: 768px) {
   @import '_mobile.scss';

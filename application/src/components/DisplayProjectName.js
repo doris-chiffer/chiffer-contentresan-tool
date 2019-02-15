@@ -5,7 +5,7 @@ import React from 'react';
 function ProjectName(props) {
   return (
     <div className="project-container">
-      <h2>Contentresan: {props.projectName}!</h2>
+      <h1>Contentresan: {props.projectName}</h1>
     </div>
   );
 }
