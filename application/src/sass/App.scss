@@ -12,12 +12,7 @@ html {
   font-weight: 400; //regular
 }
 
-.App {
-  text-align: center;
-  background-image: url('../images/background-contentresa.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/*HOME PAGE*/
 
 .chiffer-logo-black {
   height: 10vmin;
@@ -33,8 +28,12 @@ html {
   color: white;
 }
 
-/*HOME PAGE*/
-
+.App {
+  text-align: center;
+  background-image: url('../images/background-contentresa.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 //form
 .form-container {
   margin: 20px;
@@ -91,13 +90,6 @@ html {
 .text-danger {
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-.page-container {
-  text-align: center;
-  background-image: url('../images/backgrounds/second-background\ .png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*NAVBAR*/

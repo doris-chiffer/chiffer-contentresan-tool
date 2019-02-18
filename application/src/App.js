@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './sass/App.scss';
+import './sass/ContentresanPage.scss';
 
 //components
 import StartPage from './components/StartPage';
