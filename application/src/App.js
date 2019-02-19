@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './sass/App.scss';
 import './sass/ContentresanPage.scss';
+import './sass/ContentresanCircle.scss';
 
 //components
 import StartPage from './components/StartPage';

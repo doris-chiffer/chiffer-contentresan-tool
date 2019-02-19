@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
 
 class PostIt extends Component {
   render() {
-    return <div>vcxvxc</div>;
+    return (
+      <div>
+        <div className="introduction-postit">
+          <div className="postit-content">
+            <div>
+              <span>I'm a responsive square</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 
