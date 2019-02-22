@@ -4,29 +4,34 @@ import React, { Component } from 'react';
 //   DropdownMenu,
 //   DropdownItem,
 // } from 'reactstrap';
-
+import TriggerIcon from '../images/nummersteg/trigger_icon.png';
+import StegEtt from '../images/nummersteg/steg-1.png';
+import StegTva from '../images/nummersteg/steg-2.png';
+import StegTre from '../images/nummersteg/steg-3.png';
+import StegFyra from '../images/nummersteg/steg-4.png';
+import StegFem from '../images/nummersteg/steg-5.png';
 class DropdownBar extends Component {
   render() {
     return (
       <div>
         <ul className="circle-container">
-          <li>
-            <img src="http://lorempixel.com/100/100/city" alt="exempel" />
+          <li className="circle-items">
+            <img src={StegEtt} alt="exempel" />
+          </li>
+          <li className="circle-items">
+            <img src={StegTva} alt="exempel" />
+          </li>
+          <li className="circle-item">
+            <img src={StegTre} alt="exempel" />
+          </li>
+          <li className="circle-item">
+            <img src={StegFyra} alt="exempel" />
           </li>
           <li>
-            <img src="http://lorempixel.com/100/100/nature" alt="exempel" />
+            <img src={StegFem} alt="exempel" />
           </li>
-          <li>
-            <img src="http://lorempixel.com/100/100/abstract" alt="exempel" />
-          </li>
-          <li>
-            <img src="http://lorempixel.com/100/100/cats" alt="exempel" />
-          </li>
-          <li>
-            <img src="http://lorempixel.com/100/100/food" alt="exempel" />
-          </li>
-          <li>
-            <img src="http://lorempixel.com/100/100/animals" alt="exempel" />
+          <li className="circle-item">
+            <img src={TriggerIcon} alt="Trigger" />
           </li>
         </ul>
 
