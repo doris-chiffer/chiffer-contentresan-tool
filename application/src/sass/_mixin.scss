@@ -7,3 +7,63 @@ $roboto: 'Roboto', sans-serif;
 //colors
 $chifferTurquoise: rgb(89, 169, 173);
 $defaultTextColor: rgb(0, 0, 0);
+$defaultWhite: #ffff;
+$navbarColor: #364856;
+$dropdownColor: #426885;
+
+// post it colors
+
+@mixin greenPostIt {
+  background-color: #71be41;
+  border-top: 40px solid #4d9720;
+}
+
+@mixin bluePostIt {
+  background-color: #52a8fa;
+  border-top: 40px solid #1c8df8;
+}
+
+@mixin orangePostIt {
+  background-color: #f4901b;
+  border-top: 40px solid #d4790e;
+}
+
+@mixin yellowPostIt {
+  background-color: #fadc02;
+  border-top: 40px solid #c5b000;
+}
+
+@mixin darkbluePostIt {
+  background-color: #54758a;
+  border-top: 40px solid #496578;
+}
+
+@mixin triggerPostIt {
+  background-color: white;
+  border: 5px dotted #e05720;
+}
+
+/* <div className="green-postit postit">
+          <div className="postit-content">
+          </div>
+        </div>
+        <div className="blue-postit postit">
+          <div className="postit-content">
+              <p>{this.state.utvardering}</p>            
+          </div>
+        </div>
+        <div className="orange-postit postit">
+          <div className="postit-content">
+              <p>{this.state.kop}</p>            
+          </div>
+        </div>
+        <div className="yellow-postit postit">
+          <div className="postit-content">
+              <p>{this.state.efterKop}</p>            
+          </div>
+        </div>
+        <div className="darkblue-postit postit">
+          <div className="postit-content">
+              <p>{this.state.lojalitetsLopp}</p>            
+          </div>
+        </div>  */

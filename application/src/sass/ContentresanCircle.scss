@@ -1,0 +1,57 @@
+.circle-container {
+  position: relative;
+  width: 30em;
+  height: 30em;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  box-sizing: content-box;
+  margin: 5em auto 0;
+  border: solid 10px black;
+
+  li {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6em;
+    height: 6em;
+    margin: -3em;
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 50%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// form the child elements into a circle on the lined circle
+.circle-container > :nth-child(4) {
+  // steg 4
+  transform: rotate(30deg) translate(15em) rotate(-30deg);
+}
+.circle-container > :nth-child(5) {
+  //steg 5
+  transform: rotate(90deg) translate(15em) rotate(-90deg);
+}
+.circle-container > :nth-child(6) {
+  // trigger icon
+  transform: rotate(150deg) translate(15em) rotate(-150deg);
+}
+.circle-container > :nth-child(1) {
+  // steg 1
+  transform: rotate(210deg) translate(15em) rotate(-210deg);
+}
+.circle-container > :nth-child(2) {
+  // steg 2
+  transform: rotate(270deg) translate(15em) rotate(-270deg);
+}
+.circle-container > :nth-child(3) {
+  // steg 3
+  transform: rotate(330deg) translate(15em) rotate(-330deg);
+}
