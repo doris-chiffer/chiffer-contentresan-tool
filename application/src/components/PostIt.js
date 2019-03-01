@@ -5,30 +5,38 @@ class PostIt extends Component {
     super(props);
 
     this.state = {
+      introduktion: 'Skriv Introduktion',
+      utvardering: 'Skriv utvardering',
+      kop: 'Skriv kop',
       trigger: 'Skriv en Trigger',
       edit: false,
     };
 
     this.editHandler = this.editHandler.bind(this);
     this.saveHandler = this.saveHandler.bind(this);
-    // this.handleTrigger = this.handleTrigger.bind(this);
     this.deleteTrigger = this.deleteTrigger.bind(this);
+    this.deleteIntroduktion = this.deleteIntroduktion.bind(this);
   }
 
-  deleteTrigger() {
+  //introduktion functions
+  deleteIntroduktion() {
+    //event.preventDefault();
     this.setState({
-      trigger: 'Skriv Trigger',
+      introduktion: '',
     });
   }
 
-  // // get the value from the text area
-  // handleTrigger  (event) {
-  //   this.setState({  trigger: event.target.value });
-  // };
+  // trigger functions
+  deleteTrigger() {
+    //event.preventDefault();
+    this.setState({
+      trigger: '',
+    });
+  }
 
   // makes the text editable
   editHandler() {
-    // event.preventDefault();
+    //event.preventDefault();
 
     this.setState({
       edit: true,
@@ -37,61 +45,37 @@ class PostIt extends Component {
 
   // saves the text
   saveHandler() {
-    // event.preventDefault();
     this.setState({
-      trigger: this.ref.newText.value,
+      trigger: this.refs.newText.value,
       edit: false,
     });
   }
 
-  // render() {
-  //   if (this.state.edit=== true) {
-
-  //     return (
-  //       <div className="trigger-postit postit">
-
-  //      <textarea
-  //       defaultValue={this.state.trigger}
-  //       refs="newText"
-  //       onChange={this.handleTrigger}
-  //       />
-
-  //         <button onClick={this.saveHandler}>
-  //         <i className="far fa-save"/>
-  //         </button>
-  //       </div>
-
-  //     );
-  //   } else {
-  //   return (
-
-  //       <div className="trigger-postit postit">
-  //         <p>{this.state.trigger}</p>
-
-  //         <button onClick={this.editHandler}>
-  //         <i className="far fa-edit"/>
-  //         </button>
-  //         <button onClick={this.deleteTrigger} >
-  //         <i className="far fa-trash-alt"/>
-  //         </button>
-  //       </div>
-
-  //   );
-  // }
-
-  //}
-
   noteFinished() {
     return (
-      <div className="trigger-postit postit">
-        <p>{this.state.trigger}</p>
-        <div className="note-buttons">
-          <button onClick={this.editHandler}>
-            <i className="far fa-edit" />
-          </button>
-          <button onClick={this.deleteTrigger}>
-            <i className="far fa-trash-alt" />
-          </button>
+      <div>
+        <div className="green-postit postit">
+          <p>{this.state.introduktion}</p>
+          <div className="note-buttons">
+            <button onClick={this.editHandler}>
+              <i className="far fa-edit" />
+            </button>
+            <button onClick={this.deleteIntroduktion}>
+              <i className="far fa-trash-alt" />
+            </button>
+          </div>
+        </div>
+
+        <div className="trigger-postit postit">
+          <p>{this.state.trigger}</p>
+          <div className="note-buttons">
+            <button onClick={this.editHandler}>
+              <i className="far fa-edit" />
+            </button>
+            <button onClick={this.deleteTrigger}>
+              <i className="far fa-trash-alt" />
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -99,17 +83,30 @@ class PostIt extends Component {
 
   noteEdit() {
     return (
-      <div className="trigger-postit postit">
-        <textarea
-          defaultValue={this.state.trigger}
-          ref="newText"
-          placeholder="Skriv en Trigger"
-        />
+      <div>
+        <div className="green-postit postit">
+          <textarea
+            defaultValue={this.state.introduktion}
+            ref="newText"
+            placeholder="Skriv en Introduktion"
+          />
+          <button onClick={this.saveHandler}>
+            SPARA
+            <i className="far fa-save" />
+          </button>
+        </div>
 
-        <button onClick={this.saveHandler}>
-          SPARA
-          <i className="far fa-save" />
-        </button>
+        <div className="trigger-postit postit">
+          <textarea
+            defaultValue={this.state.trigger}
+            ref="newText"
+            placeholder="Skriv en Trigger"
+          />
+          <button onClick={this.saveHandler}>
+            SPARA
+            <i className="far fa-save" />
+          </button>
+        </div>
       </div>
     );
   }
