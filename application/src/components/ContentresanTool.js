@@ -15,22 +15,22 @@ class DropdownBar extends Component {
     return (
       <div>
         <ul className="circle-container">
-          <li className="circle-items">
+          <li className="circle-items steg-ett">
             <img src={StegEtt} alt="exempel" />
           </li>
-          <li className="circle-items">
+          <li className="circle-items steg-tva">
             <img src={StegTva} alt="exempel" />
           </li>
-          <li className="circle-item">
+          <li className="circle-item steg-tre">
             <img src={StegTre} alt="exempel" />
           </li>
-          <li className="circle-item">
+          <li className="circle-item steg-fyra">
             <img src={StegFyra} alt="exempel" />
           </li>
-          <li>
+          <li className="circle-item steg-fem">
             <img src={StegFem} alt="exempel" />
           </li>
-          <li className="circle-item">
+          <li className="circle-item steg-trigger">
             <img src={TriggerIcon} alt="Trigger" />
           </li>
         </ul>

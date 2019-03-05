@@ -39,31 +39,10 @@
   background: rgba(255, 255, 255, 0.5);
 }
 
-// .postit-content {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   color: black;
-
-//   div {
-//     display: table;
-//     width: 100%;
-//     height: 100%;
-//   }
-
-//   note-buttons {
-//     display: table-cell;
-//     text-align: center;
-//     vertical-align: middle;
-//     color: black;
-//   }
-
-// }
-
 .green-postit {
   @include greenPostIt;
+  top: -30em;
+  left: 7em;
 }
 
 .blue-postit {
@@ -84,4 +63,5 @@
 
 .trigger-postit {
   @include triggerPostIt;
+  margin-left: 400px;
 }

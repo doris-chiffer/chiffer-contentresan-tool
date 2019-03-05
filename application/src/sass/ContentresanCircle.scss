@@ -1,3 +1,5 @@
+@import '_mixin.scss';
+
 .circle-container {
   position: relative;
   width: 30em;
@@ -30,7 +32,79 @@
   }
 }
 
-// form the child elements into a circle on the lined circle
+/*Lines conecting to the post it notes*/
+.steg-ett::before {
+  content: '';
+  position: absolute;
+  top: 2.9em;
+  left: -10em;
+  width: 10em;
+  height: 0.2em;
+  background: $greyLineColor;
+}
+
+.steg-tva::before {
+  content: '';
+  position: absolute;
+  top: 2em;
+  left: -10.02em;
+  width: 10.16em;
+  height: 0.2em;
+  background: $greyLineColor;
+}
+
+.steg-tva::after {
+  content: '';
+  position: absolute;
+  top: -5em;
+  right: 16em;
+  width: 0.2em;
+  height: 7.16em;
+  background: #979797;
+}
+
+.steg-tre::before {
+  content: '';
+  position: absolute;
+  top: 2em;
+  right: -10.02em;
+  width: 10.16em;
+  height: 0.2em;
+  background: $greyLineColor;
+}
+
+.steg-fyra::before {
+  content: '';
+  position: absolute;
+  top: 5.8em;
+  right: 1.98em;
+  width: 0.2em;
+  height: 7.16em;
+  background: $greyLineColor;
+}
+
+.steg-fem::before {
+  content: '';
+  position: absolute;
+  top: 5.8em;
+  left: 3em;
+  width: 0.2em;
+  height: 7.16em;
+  background: $greyLineColor;
+}
+
+.steg-trigger::before {
+  content: '';
+  top: -3em;
+  left: -8em;
+  position: absolute;
+  bottom: -6.3em;
+  width: 8em;
+  height: 6.16em;
+  border-bottom: 5px dotted #e05720;
+}
+
+// forms the child elements into a circle on the lined circle
 .circle-container > :nth-child(4) {
   // steg 4
   transform: rotate(30deg) translate(15em) rotate(-30deg);
