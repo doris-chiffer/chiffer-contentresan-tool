@@ -62,88 +62,88 @@ class PostIt extends Component {
   //   });
   // }
 
-  render() {
-    return (
-      <div>
-        <div className="green-postit postit">
-          <p>{this.state.introduktion}</p>
+  // render() {
+  //   return (
+  //     <div>
+  //       <div className="green-postit postit">
+  //         <p>{this.state.introduktion}</p>
 
-          <div className="note-buttons">
-            <button onClick={this.editIntroduktionHandler}>
-              <i className="far fa-edit" />
-            </button>
-            <button onClick={this.deleteIntroduktion}>
-              <i className="far fa-trash-alt" />
-            </button>
-          </div>
-        </div>
+  //         <div className="note-buttons">
+  //           <button onClick={this.editIntroduktionHandler}>
+  //             <i className="far fa-edit" />
+  //           </button>
+  //           <button onClick={this.deleteIntroduktion}>
+  //             <i className="far fa-trash-alt" />
+  //           </button>
+  //         </div>
+  //       </div>
 
-        <div className="blue-postit postit">
-          <p>{this.state.kop}</p>
+  //       <div className="blue-postit postit">
+  //         <p>{this.state.kop}</p>
 
-          <div className="note-buttons">
-            <button onClick={this.editIntroduktionHandler}>
-              <i className="far fa-edit" />
-            </button>
-            <button onClick={this.deleteIntroduktion}>
-              <i className="far fa-trash-alt" />
-            </button>
-          </div>
-        </div>
+  //         <div className="note-buttons">
+  //           <button onClick={this.editIntroduktionHandler}>
+  //             <i className="far fa-edit" />
+  //           </button>
+  //           <button onClick={this.deleteIntroduktion}>
+  //             <i className="far fa-trash-alt" />
+  //           </button>
+  //         </div>
+  //       </div>
 
-        <div className="orange-postit postit">
-          <p>{this.state.introduktion}</p>
+  //       <div className="orange-postit postit">
+  //         <p>{this.state.introduktion}</p>
 
-          <div className="note-buttons">
-            <button onClick={this.editIntroduktionHandler}>
-              <i className="far fa-edit" />
-            </button>
-            <button onClick={this.deleteIntroduktion}>
-              <i className="far fa-trash-alt" />
-            </button>
-          </div>
-        </div>
+  //         <div className="note-buttons">
+  //           <button onClick={this.editIntroduktionHandler}>
+  //             <i className="far fa-edit" />
+  //           </button>
+  //           <button onClick={this.deleteIntroduktion}>
+  //             <i className="far fa-trash-alt" />
+  //           </button>
+  //         </div>
+  //       </div>
 
-        <div className="darkblue-postit postit">
-          <p>{this.state.introduktion}</p>
+  //       <div className="darkblue-postit postit">
+  //         <p>{this.state.introduktion}</p>
 
-          <div className="note-buttons">
-            <button onClick={this.editIntroduktionHandler}>
-              <i className="far fa-edit" />
-            </button>
-            <button onClick={this.deleteIntroduktion}>
-              <i className="far fa-trash-alt" />
-            </button>
-          </div>
-        </div>
+  //         <div className="note-buttons">
+  //           <button onClick={this.editIntroduktionHandler}>
+  //             <i className="far fa-edit" />
+  //           </button>
+  //           <button onClick={this.deleteIntroduktion}>
+  //             <i className="far fa-trash-alt" />
+  //           </button>
+  //         </div>
+  //       </div>
 
-        <div className="yellow-postit postit">
-          <p>{this.state.introduktion}</p>
+  //       <div className="yellow-postit postit">
+  //         <p>{this.state.introduktion}</p>
 
-          <div className="note-buttons">
-            <button onClick={this.editIntroduktionHandler}>
-              <i className="far fa-edit" />
-            </button>
-            <button onClick={this.deleteIntroduktion}>
-              <i className="far fa-trash-alt" />
-            </button>
-          </div>
-        </div>
+  //         <div className="note-buttons">
+  //           <button onClick={this.editIntroduktionHandler}>
+  //             <i className="far fa-edit" />
+  //           </button>
+  //           <button onClick={this.deleteIntroduktion}>
+  //             <i className="far fa-trash-alt" />
+  //           </button>
+  //         </div>
+  //       </div>
 
-        <div className="trigger-postit postit">
-          <p>{this.state.trigger}</p>
-          <div className="note-buttons">
-            <button onClick={this.editTriggerHandler}>
-              <i className="far fa-edit" />
-            </button>
-            <button onClick={this.deleteTrigger}>
-              <i className="far fa-trash-alt" />
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  //       <div className="trigger-postit postit">
+  //         <p>{this.state.trigger}</p>
+  //         <div className="note-buttons">
+  //           <button onClick={this.editTriggerHandler}>
+  //             <i className="far fa-edit" />
+  //           </button>
+  //           <button onClick={this.deleteTrigger}>
+  //             <i className="far fa-trash-alt" />
+  //           </button>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 }
 
 export default PostIt;

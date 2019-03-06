@@ -13,11 +13,24 @@ import StegFem from '../images/nummersteg/steg-5.png';
 class DropdownBar extends Component {
   render() {
     return (
-      <div>
+      <div className="contentresan-tool">
         <ul className="circle-container">
           <li className="circle-items steg-ett">
             <img src={StegEtt} alt="exempel" />
+            <div className="green-postit postit">
+              <p>intro</p>
+
+              <div className="note-buttons">
+                <button>
+                  <i className="far fa-edit" />
+                </button>
+                <button>
+                  <i className="far fa-trash-alt" />
+                </button>
+              </div>
+            </div>
           </li>
+
           <li className="circle-items steg-tva">
             <img src={StegTva} alt="exempel" />
           </li>
@@ -34,59 +47,6 @@ class DropdownBar extends Component {
             <img src={TriggerIcon} alt="Trigger" />
           </li>
         </ul>
-
-        {/* <DropdownToggle nav caret>
-                  LÄGG TILL STEG
-                  <i className="material-icons vertical-align-middle padding-bottom-3">
-                    add_circle_outline
-                  </i>
-                </DropdownToggle>
-
-                <DropdownMenu>
-                  <DropdownItem onClick={this.toggle.bind(this)}>
-                    <span className="fa-stack fa-1x">
-                      <i className="far fa-circle fa-stack-2x" />
-                      <span className="fa fa-stack-1x">1</span>
-                    </span>
-                    Introduktion                   
-                  </DropdownItem>
-                  <DropdownItem>
-                    <span className="fa-stack fa-1x">
-                      <i className="far fa-circle fa-stack-2x" />
-                      <span className="fa fa-stack-1x">2</span>
-                    </span>
-                    Utvärdering
-                  </DropdownItem>
-                  <DropdownItem>
-                    <span className="fa-stack fa-1x">
-                      <i className="far fa-circle fa-stack-2x" />
-                      <span className="fa fa-stack-1x">3</span>
-                    </span>
-                    Köp
-                  </DropdownItem>
-                  <DropdownItem>
-                    <span className="fa-stack fa-1x">
-                      <i className="far fa-circle fa-stack-2x" />
-                      <span className="fa fa-stack-1x">4</span>
-                    </span>
-                    Efterköp
-                  </DropdownItem>
-                  <DropdownItem>
-                    <span className="fa-stack fa-1x">
-                      <i className="far fa-circle fa-stack-2x" />
-                      <span className="fa fa-stack-1x">5</span>
-                    </span>
-                    Lojalitets lopp
-                  </DropdownItem>
-                  <DropdownItem>
-                    <span className="fa-stack fa-1x">
-                      <i className="far fa-circle fa-stack-2x" />
-                      <span className="fa fa-stack-1x">6</span>
-                    </span>
-                    Trigger
-                  </DropdownItem>
-                </DropdownMenu>
-           */}
       </div>
     );
   }

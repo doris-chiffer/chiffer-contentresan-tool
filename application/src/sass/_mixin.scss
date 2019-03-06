@@ -15,8 +15,8 @@ $greyLineColor: #979797;
 // post it colors
 
 @mixin greenPostIt {
-  background-color: #71be41;
-  border-top: 40px solid #4d9720;
+  background-color: #71be41 !important;
+  border-top: 40px solid #4d9720 !important;
 }
 
 @mixin bluePostIt {

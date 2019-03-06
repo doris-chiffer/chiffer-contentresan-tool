@@ -12,7 +12,7 @@ function ContentResanPage(props) {
         <DisplayProjectName projectName={props.projectName} />
         <div className="contentresan-tool">
           <ContentresanCircle />
-          <PostItNotes />
+          {/* <PostItNotes /> */}
         </div>
       </div>
     </div>

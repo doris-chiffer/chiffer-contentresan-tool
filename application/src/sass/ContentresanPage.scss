@@ -13,8 +13,8 @@
   position: relative;
   width: 200px;
   height: 200px;
-  background: pink;
   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: bisque;
 }
 
 .postit p {
@@ -39,14 +39,16 @@
   background: rgba(255, 255, 255, 0.5);
 }
 
-.green-postit {
+.green-postit.postit {
   @include greenPostIt;
-  top: -30em;
-  left: 7em;
+  top: -10em;
+  left: -21em;
 }
 
 .blue-postit {
   @include bluePostIt;
+  bottom: 59em;
+  left: 25em;
 }
 
 .orange-postit {
@@ -59,6 +61,8 @@
 
 .darkblue-postit {
   @include darkbluePostIt;
+  left: 39em;
+  bottom: 32em;
 }
 
 .trigger-postit {
