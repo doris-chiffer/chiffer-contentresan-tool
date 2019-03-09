@@ -2,8 +2,8 @@
 
 .circle-container {
   position: relative;
-  width: 30em;
-  height: 30em;
+  width: 25em;
+  height: 25em;
   padding: 0;
   border-radius: 50%;
   list-style: none;
@@ -56,10 +56,10 @@
 .steg-tva::after {
   content: '';
   position: absolute;
-  top: -5em;
+  top: -0.6em;
   right: 16em;
   width: 0.2em;
-  height: 7.16em;
+  height: 2.8em;
   background: #979797;
 }
 
@@ -67,8 +67,8 @@
   content: '';
   position: absolute;
   top: 2em;
-  right: -10.02em;
-  width: 10.16em;
+  right: -9.02em;
+  width: 9.16em;
   height: 0.2em;
   background: $greyLineColor;
 }
@@ -80,6 +80,16 @@
   right: 1.98em;
   width: 0.2em;
   height: 7.16em;
+  background: $greyLineColor;
+}
+
+.steg-fyra::after {
+  content: '';
+  position: absolute;
+  top: 12.8em;
+  left: 3.98em;
+  width: 6.16em;
+  height: 0.2em;
   background: $greyLineColor;
 }
 
@@ -104,28 +114,37 @@
   border-bottom: 5px dotted #e05720;
 }
 
+.steg-trigger::after {
+  content: '';
+  top: 3em;
+  left: -8em;
+  position: absolute;
+  width: 8em;
+  height: 6.16em;
+  border-left: 5px dotted #e05720;
+}
 // forms the child elements into a circle on the lined circle
 .circle-container > :nth-child(4) {
   // steg 4
-  transform: rotate(30deg) translate(15em) rotate(-30deg);
+  transform: rotate(30deg) translate(12em) rotate(-30deg);
 }
 .circle-container > :nth-child(5) {
   //steg 5
-  transform: rotate(90deg) translate(15em) rotate(-90deg);
+  transform: rotate(90deg) translate(12em) rotate(-90deg);
 }
 .circle-container > :nth-child(6) {
   // trigger icon
-  transform: rotate(150deg) translate(15em) rotate(-150deg);
+  transform: rotate(150deg) translate(12em) rotate(-150deg);
 }
 .circle-container > :nth-child(1) {
   // steg 1
-  transform: rotate(210deg) translate(15em) rotate(-210deg);
+  transform: rotate(210deg) translate(12em) rotate(-210deg);
 }
 .circle-container > :nth-child(2) {
   // steg 2
-  transform: rotate(270deg) translate(15em) rotate(-270deg);
+  transform: rotate(270deg) translate(12em) rotate(-270deg);
 }
 .circle-container > :nth-child(3) {
   // steg 3
-  transform: rotate(330deg) translate(15em) rotate(-330deg);
+  transform: rotate(330deg) translate(12em) rotate(-330deg);
 }

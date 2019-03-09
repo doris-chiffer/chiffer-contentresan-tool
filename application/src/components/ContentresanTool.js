@@ -33,18 +33,83 @@ class DropdownBar extends Component {
 
           <li className="circle-items steg-tva">
             <img src={StegTva} alt="exempel" />
+
+            <div className="blue-postit postit">
+              <p>intro</p>
+
+              <div className="note-buttons">
+                <button>
+                  <i className="far fa-edit" />
+                </button>
+                <button>
+                  <i className="far fa-trash-alt" />
+                </button>
+              </div>
+            </div>
           </li>
           <li className="circle-item steg-tre">
             <img src={StegTre} alt="exempel" />
+
+            <div className="orange-postit postit">
+              <p>kf</p>
+
+              <div className="note-buttons">
+                <button>
+                  <i className="far fa-edit" />
+                </button>
+                <button>
+                  <i className="far fa-trash-alt" />
+                </button>
+              </div>
+            </div>
           </li>
           <li className="circle-item steg-fyra">
             <img src={StegFyra} alt="exempel" />
+
+            <div className="yellow-postit postit">
+              <p>kf</p>
+
+              <div className="note-buttons">
+                <button>
+                  <i className="far fa-edit" />
+                </button>
+                <button>
+                  <i className="far fa-trash-alt" />
+                </button>
+              </div>
+            </div>
           </li>
           <li className="circle-item steg-fem">
             <img src={StegFem} alt="exempel" />
+
+            <div className="darkblue-postit postit">
+              <p>kf</p>
+
+              <div className="note-buttons">
+                <button>
+                  <i className="far fa-edit" />
+                </button>
+                <button>
+                  <i className="far fa-trash-alt" />
+                </button>
+              </div>
+            </div>
           </li>
           <li className="circle-item steg-trigger">
             <img src={TriggerIcon} alt="Trigger" />
+
+            <div className="trigger-postit postit">
+              <p>kf</p>
+
+              <div className="note-buttons">
+                <button>
+                  <i className="far fa-edit" />
+                </button>
+                <button>
+                  <i className="far fa-trash-alt" />
+                </button>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

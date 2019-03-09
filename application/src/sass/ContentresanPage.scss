@@ -5,6 +5,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  width: 100%;
+}
+
+/*Project title*/
+.project-container {
+  margin: 30px;
+  padding: 30px;
 }
 
 /*Post it notes*/
@@ -47,25 +54,30 @@
 
 .blue-postit {
   @include bluePostIt;
-  bottom: 59em;
-  left: 25em;
+  top: -19em;
+  left: -17em;
 }
 
 .orange-postit {
   @include orangePostIt;
+  bottom: 9em;
+  left: 10em;
 }
 
 .yellow-postit {
   @include yellowPostIt;
+  right: -10em;
 }
 
 .darkblue-postit {
   @include darkbluePostIt;
-  left: 39em;
-  bottom: 32em;
+  left: -3em;
+  bottom: -7em;
 }
 
 .trigger-postit {
   @include triggerPostIt;
   margin-left: 400px;
+  right: 39em;
+  bottom: -3.7em;
 }

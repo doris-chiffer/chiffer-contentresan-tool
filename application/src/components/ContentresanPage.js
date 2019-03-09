@@ -6,15 +6,11 @@ import ContentresanCircle from './ContentresanTool';
 
 function ContentResanPage(props) {
   return (
-    <div>
+    <div className="contentresan-container">
       <Navbar />
-      <div className="contentresan-container">
-        <DisplayProjectName projectName={props.projectName} />
-        <div className="contentresan-tool">
-          <ContentresanCircle />
-          {/* <PostItNotes /> */}
-        </div>
-      </div>
+      <DisplayProjectName projectName={props.projectName} />
+      <ContentresanCircle />
+      {/* <PostItNotes /> */}
     </div>
   );
 }
