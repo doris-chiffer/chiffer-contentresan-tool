@@ -7,7 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  // UncontrolledDropdown,
 } from 'reactstrap';
 
 class ToolNavbar extends Component {
@@ -33,9 +32,6 @@ class ToolNavbar extends Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              {/* <UncontrolledDropdown nav inNavbar>
-             <DropdownBar/>
-              </UncontrolledDropdown> */}
               <NavItem>
                 <NavLink href="/">
                   SPARA
