@@ -11,6 +11,8 @@ function ContentResanPage(props) {
       <DisplayProjectName projectName={props.projectName} />
       <ContentresanCircle />
       {/* <PostItNotes /> */}
+      <div className="clear" />
+      <footer>©Chiffer</footer>
     </div>
   );
 }

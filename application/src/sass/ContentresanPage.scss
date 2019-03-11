@@ -1,4 +1,5 @@
 @import '_mixin.scss';
+@import '_mobile.scss';
 
 .contentresan-container {
   background-image: url(../images/backgrounds/second-background.png);
@@ -80,4 +81,18 @@
   margin-left: 400px;
   right: 39em;
   bottom: -3.7em;
+}
+
+// make the background fill out whole bottom
+.clear {
+  padding: 163px;
+}
+
+footer {
+  padding: 10px;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  @import '_mobile.scss';
 }
