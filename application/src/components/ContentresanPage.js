@@ -4,7 +4,8 @@ import DisplayProjectName from './DisplayProjectName';
 import PostItNotes from './PostIt';
 import ContentresanCircle from './ContentresanTool';
 import ReactToPrint from 'react-to-print';
-
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 import {
   Collapse,
   Navbar,
@@ -26,6 +27,20 @@ class ContentResanPage extends Component {
       isOpen: false,
     };
   }
+
+  printDocument() {
+    const input = document.getElementById('divToPrint');
+    html2canvas(input).then(canvas => {
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF('landscape');
+      const width = pdf.internal.pageSize.getWidth();
+      const height = pdf.internal.pageSize.getHeight();
+      pdf.addImage(imgData, 'JPEG', 0, 0, width, height);
+      // pdf.output('dataurlnewwindow');
+      pdf.save('download.pdf');
+    });
+  }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen,
@@ -41,7 +56,7 @@ class ContentResanPage extends Component {
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <NavItem>
+                <NavItem onClick={this.printDocument}>
                   <NavLink>
                     SPARA
                     <i className="material-icons vertical-align-middle padding-bottom-3">
@@ -74,6 +89,7 @@ class ContentResanPage extends Component {
             </Collapse>
           </Navbar>
         </div>
+
         <DisplayProjectName
           projectName={this.props.projectName}
           ref={el => (this.componentRef = el)}
