@@ -1,7 +1,8 @@
 @import '_mixin.scss';
 @import '_mobile.scss';
 
-.contentresan-container {
+.contentresan-container,
+#contentresan-container {
   background-image: url(../images/backgrounds/second-background.png);
   background-size: cover;
   background-repeat: no-repeat;
