@@ -6,11 +6,12 @@ import ContentresanCircle from './ContentresanTool';
 class ProjectName extends Component {
   render() {
     return (
-      <div id="divToPrint">
+      <div id="div-to-pdf">
         <div className="project-container">
           <h1>Contentresan: {this.props.projectName}</h1>
         </div>
         <ContentresanCircle />
+        <div className="clear" />
       </div>
     );
   }

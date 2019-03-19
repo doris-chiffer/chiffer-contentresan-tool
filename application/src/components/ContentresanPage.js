@@ -27,18 +27,18 @@ class ContentResanPage extends Component {
       isOpen: false,
     };
 
-    this.printDocument = this.printDocument.bind(this);
+    this.saveAsPdf = this.saveAsPdf.bind(this);
   }
 
-  printDocument = event => {
+  saveAsPdf = event => {
     event.preventDefault();
-    const input = document.getElementById('divToPrint');
+    const input = document.getElementById('div-to-pdf');
     html2canvas(input).then(canvas => {
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF('landscape');
-      const width = pdf.internal.pageSize.getWidth();
-      const height = pdf.internal.pageSize.getHeight();
-      pdf.addImage(imgData, 'JPEG', 0, 0, width, height);
+      // const width = pdf.internal.pageSize.getWidth();
+      // const height = pdf.internal.pageSize.getHeight();
+      pdf.addImage(imgData, 'PNG', 10, 10, 280, 235);
       pdf.save(`${this.props.projectName}.pdf`);
     });
   };
@@ -58,7 +58,7 @@ class ContentResanPage extends Component {
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <NavItem onClick={this.printDocument}>
+                <NavItem onClick={this.saveAsPdf}>
                   <NavLink>
                     SPARA
                     <i className="material-icons vertical-align-middle padding-bottom-3">
@@ -96,7 +96,6 @@ class ContentResanPage extends Component {
           projectName={this.props.projectName}
           ref={el => (this.componentRef = el)}
         />
-        <div className="clear" />
         <footer id="footer">©Chiffer</footer>
       </div>
     );
