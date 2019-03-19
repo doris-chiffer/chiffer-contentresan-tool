@@ -26,9 +26,12 @@ class ContentResanPage extends Component {
     this.state = {
       isOpen: false,
     };
+
+    this.printDocument = this.printDocument.bind(this);
   }
 
-  printDocument() {
+  printDocument = event => {
+    event.preventDefault();
     const input = document.getElementById('divToPrint');
     html2canvas(input).then(canvas => {
       const imgData = canvas.toDataURL('image/png');
@@ -36,10 +39,9 @@ class ContentResanPage extends Component {
       const width = pdf.internal.pageSize.getWidth();
       const height = pdf.internal.pageSize.getHeight();
       pdf.addImage(imgData, 'JPEG', 0, 0, width, height);
-      // pdf.output('dataurlnewwindow');
-      pdf.save('download.pdf');
+      pdf.save(`${this.props.projectName}.pdf`);
     });
-  }
+  };
 
   toggle() {
     this.setState({
