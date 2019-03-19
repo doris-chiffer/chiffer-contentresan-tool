@@ -5,118 +5,37 @@ class PostIt extends Component {
     super(props);
 
     this.state = {
-      introduktion: 'Skriv Introduktion',
-      utvardering: 'Skriv utvardering',
-      kop: 'Skriv kop',
-      trigger: 'Skriv en Trigger',
-      edit: false,
+      editIntroduktion: false,
+      editTrigger: false,
     };
 
-    this.editHandler = this.editHandler.bind(this);
-    this.saveHandler = this.saveHandler.bind(this);
-    this.deleteTrigger = this.deleteTrigger.bind(this);
-    this.deleteIntroduktion = this.deleteIntroduktion.bind(this);
+    this.editTriggerHandler = this.editTriggerHandler.bind(this);
+    this.editIntroduktionHandler = this.editIntroduktionHandler.bind(this);
+    this.saveIntroduktionHandler = this.saveIntroduktionHandler.bind(this);
+    // this.saveTriggerHandler = this.saveTriggerHandler.bind(this);
   }
-
   //introduktion functions
-  deleteIntroduktion() {
-    //event.preventDefault();
-    this.setState({
-      introduktion: '',
-    });
-  }
 
   // trigger functions
-  deleteTrigger() {
-    //event.preventDefault();
+
+  /*makes the text editable*/
+  editTriggerHandler() {
     this.setState({
-      trigger: '',
+      editTrigger: true,
     });
   }
 
-  // makes the text editable
-  editHandler() {
-    //event.preventDefault();
-
+  editIntroduktionHandler() {
     this.setState({
-      edit: true,
+      editIntroduktion: true,
     });
   }
-
-  // saves the text
-  saveHandler() {
+  /* saves the text*/
+  saveIntroduktionHandler() {
     this.setState({
-      trigger: this.refs.newText.value,
-      edit: false,
+      introduktion: this.refs.newIntro.value,
+      editIntroduktion: false,
     });
-  }
-
-  noteFinished() {
-    return (
-      <div>
-        <div className="green-postit postit">
-          <p>{this.state.introduktion}</p>
-          <div className="note-buttons">
-            <button onClick={this.editHandler}>
-              <i className="far fa-edit" />
-            </button>
-            <button onClick={this.deleteIntroduktion}>
-              <i className="far fa-trash-alt" />
-            </button>
-          </div>
-        </div>
-
-        <div className="trigger-postit postit">
-          <p>{this.state.trigger}</p>
-          <div className="note-buttons">
-            <button onClick={this.editHandler}>
-              <i className="far fa-edit" />
-            </button>
-            <button onClick={this.deleteTrigger}>
-              <i className="far fa-trash-alt" />
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  noteEdit() {
-    return (
-      <div>
-        <div className="green-postit postit">
-          <textarea
-            defaultValue={this.state.introduktion}
-            ref="newText"
-            placeholder="Skriv en Introduktion"
-          />
-          <button onClick={this.saveHandler}>
-            SPARA
-            <i className="far fa-save" />
-          </button>
-        </div>
-
-        <div className="trigger-postit postit">
-          <textarea
-            defaultValue={this.state.trigger}
-            ref="newText"
-            placeholder="Skriv en Trigger"
-          />
-          <button onClick={this.saveHandler}>
-            SPARA
-            <i className="far fa-save" />
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  render() {
-    if (this.state.edit) {
-      return this.noteEdit();
-    } else {
-      return this.noteFinished();
-    }
   }
 }
 

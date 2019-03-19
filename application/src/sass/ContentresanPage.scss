@@ -1,10 +1,19 @@
 @import '_mixin.scss';
+@import '_mobile.scss';
 
-.contentresan-container {
+.contentresan-container,
+#contentresan-container {
   background-image: url(../images/backgrounds/second-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  width: 100%;
+}
+
+/*Project title*/
+.project-container {
+  margin: 30px;
+  padding: 30px;
 }
 
 /*Post it notes*/
@@ -13,14 +22,18 @@
   position: relative;
   width: 200px;
   height: 200px;
-  background: pink;
   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
-}
+  background-color: bisque;
 
-.postit p {
-  margin: 0;
-  padding: 5px;
-  word-break: break-all;
+  p {
+    margin: 0;
+    padding: 5px;
+    word-break: break-all;
+  }
+
+  button {
+    margin: 2px;
+  }
 }
 
 .postit > .note-buttons {
@@ -29,59 +42,68 @@
   right: 2px;
 }
 
-.postit button {
-  margin: 2px;
-}
-
 .postit > textarea {
   height: 75%;
   width: 96%;
-  background: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  border: transparent;
+  resize: none;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
 }
 
-// .postit-content {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   color: black;
+textarea::placeholder {
+  color: $defaultTextColor;
+}
 
-//   div {
-//     display: table;
-//     width: 100%;
-//     height: 100%;
-//   }
-
-//   note-buttons {
-//     display: table-cell;
-//     text-align: center;
-//     vertical-align: middle;
-//     color: black;
-//   }
-
-// }
-
-.green-postit {
+.green-postit.postit {
   @include greenPostIt;
+  top: -10em;
+  left: -21em;
 }
 
 .blue-postit {
   @include bluePostIt;
+  top: -19em;
+  left: -17em;
 }
 
 .orange-postit {
   @include orangePostIt;
+  bottom: 9em;
+  left: 10em;
 }
 
 .yellow-postit {
   @include yellowPostIt;
+  right: -10em;
 }
 
 .darkblue-postit {
   @include darkbluePostIt;
+  left: -3em;
+  bottom: -5em;
 }
 
 .trigger-postit {
   @include triggerPostIt;
+  margin-left: 400px;
+  right: 39em;
+  bottom: -3.7em;
+}
+
+// make the background fill out whole bottom
+.clear {
+  padding: 271px;
+}
+
+footer {
+  padding: 10px;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  @import '_mobile.scss';
 }

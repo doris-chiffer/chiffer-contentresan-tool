@@ -10,12 +10,13 @@ $defaultTextColor: rgb(0, 0, 0);
 $defaultWhite: #ffff;
 $navbarColor: #364856;
 $dropdownColor: #426885;
+$greyLineColor: #979797;
 
 // post it colors
 
 @mixin greenPostIt {
-  background-color: #71be41;
-  border-top: 40px solid #4d9720;
+  background-color: #71be41 !important;
+  border-top: 40px solid #4d9720 !important;
 }
 
 @mixin bluePostIt {
@@ -42,28 +43,3 @@ $dropdownColor: #426885;
   background-color: white;
   border: 5px dotted #e05720;
 }
-
-/* <div className="green-postit postit">
-          <div className="postit-content">
-          </div>
-        </div>
-        <div className="blue-postit postit">
-          <div className="postit-content">
-              <p>{this.state.utvardering}</p>            
-          </div>
-        </div>
-        <div className="orange-postit postit">
-          <div className="postit-content">
-              <p>{this.state.kop}</p>            
-          </div>
-        </div>
-        <div className="yellow-postit postit">
-          <div className="postit-content">
-              <p>{this.state.efterKop}</p>            
-          </div>
-        </div>
-        <div className="darkblue-postit postit">
-          <div className="postit-content">
-              <p>{this.state.lojalitetsLopp}</p>            
-          </div>
-        </div>  */
