@@ -39,7 +39,6 @@ class ProjectName extends Component {
     }
     return (
       //the form
-
       <div className="project-form">
         <form onSubmit={this.submitName}>
           <div className="form-group">
@@ -52,8 +51,12 @@ class ProjectName extends Component {
               onChange={this.handleChange}
               size="50"
             />
-
-            <Button className="start-button" type="submit" value="Start">
+            <Button
+              className="start-button"
+              type="submit"
+              value="Start"
+              onClick={this.submitName}
+            >
               Gå vidare
               <span className="button-arrow">
                 <i className="far fa-arrow-alt-circle-right" />

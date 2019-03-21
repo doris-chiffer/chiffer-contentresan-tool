@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import DisplayProjectName from './DisplayProjectName';
-// import Navbar from './Navbar';
-import PostItNotes from './PostIt';
-import ContentresanCircle from './ContentresanTool';
 import ReactToPrint from 'react-to-print';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
@@ -15,8 +11,8 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap';
-
-// import * as jsPDF from 'jspdf'
+import HjalpSida from './TutorialPage';
+import DisplayProjectName from './DisplayProjectName';
 
 class ContentResanPage extends Component {
   constructor(props) {
@@ -25,6 +21,7 @@ class ContentResanPage extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
+      showPopup: false,
     };
 
     this.saveAsPdf = this.saveAsPdf.bind(this);
@@ -46,6 +43,12 @@ class ContentResanPage extends Component {
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen,
+    });
+  }
+
+  togglePopup() {
+    this.setState({
+      showPopup: !this.state.showPopup,
     });
   }
 
@@ -79,8 +82,8 @@ class ContentResanPage extends Component {
                     content={() => this.componentRef}
                   />
                 </NavItem>
-                <NavItem>
-                  <NavLink href="/">
+                <NavItem onClick={this.togglePopup.bind(this)}>
+                  <NavLink>
                     HJÄLP
                     <i className="material-icons vertical-align-middle padding-bottom-3">
                       help_outline
@@ -97,6 +100,9 @@ class ContentResanPage extends Component {
           ref={el => (this.componentRef = el)}
         />
         <footer id="footer">©Chiffer</footer>
+        {this.state.showPopup ? (
+          <HjalpSida closePopup={this.togglePopup.bind(this)} />
+        ) : null}
       </div>
     );
   }
