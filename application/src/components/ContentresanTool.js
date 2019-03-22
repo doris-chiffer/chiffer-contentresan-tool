@@ -108,11 +108,11 @@ class ContentresanTool extends Component {
                 value={this.state.introduktion}
                 onChange={this.handleChangeIntro}
               />
-              <div className="note-buttons">
+              <span>
                 <button onClick={this.deleteIntro}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </div>
+              </span>
             </div>
           </li>
 
@@ -126,11 +126,11 @@ class ContentresanTool extends Component {
                 onChange={this.handleChangeUtvardering}
               />
 
-              <div className="note-buttons">
+              <span>
                 <button onClick={this.deleteUtvardering}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </div>
+              </span>
             </div>
           </li>
           <li className="circle-item steg-tre">
@@ -143,11 +143,11 @@ class ContentresanTool extends Component {
                 onChange={this.handleChangeKop}
               />
 
-              <div className="note-buttons">
+              <span>
                 <button onClick={this.deleteKop}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </div>
+              </span>
             </div>
           </li>
           <li className="circle-item steg-fyra">
@@ -160,11 +160,11 @@ class ContentresanTool extends Component {
                 onChange={this.handleChangeEfterKop}
               />
 
-              <div className="note-buttons">
+              <span>
                 <button onClick={this.deleteEfterKop}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </div>
+              </span>
             </div>
           </li>
           <li className="circle-item steg-fem">
@@ -176,11 +176,11 @@ class ContentresanTool extends Component {
                 value={this.state.lojalitetsLoop}
                 onChange={this.handleChangeLojalitetsloop}
               />
-              <div className="note-buttons">
+              <span>
                 <button onClick={this.deleteLojalitetsLoop}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </div>
+              </span>
             </div>
           </li>
           <li className="circle-item steg-trigger">
@@ -193,11 +193,11 @@ class ContentresanTool extends Component {
                 onChange={this.handleChangeTrigger}
               />
 
-              <div className="note-buttons">
+              <span>
                 <button onClick={this.deleteTrigger}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </div>
+              </span>
             </div>
           </li>
         </ul>
