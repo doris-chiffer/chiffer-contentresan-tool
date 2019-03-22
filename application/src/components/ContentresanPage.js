@@ -57,7 +57,7 @@ class ContentResanPage extends Component {
       <div className="contentresan-container">
         <div className="navbar-container">
           <Navbar light expand="md">
-            <NavbarBrand href="/">Chiffer Contentresan</NavbarBrand>
+            <NavbarBrand>Chiffer Contentresan</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
