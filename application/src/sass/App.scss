@@ -96,13 +96,17 @@ html {
 
 .navbar {
   background-color: $navbarColor;
-  font-weight: 300; //light
+  font-weight: 300; //light font-weight
   letter-spacing: 2px;
   word-spacing: 2px;
 }
 
 .nav-item {
   margin: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link {
