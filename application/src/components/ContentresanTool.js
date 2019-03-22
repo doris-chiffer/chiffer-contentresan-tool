@@ -101,7 +101,13 @@ class ContentresanTool extends Component {
       <div className="contentresan-tool">
         <ul className="circle-container">
           <li className="circle-items steg-ett">
-            <img src={StegEtt} alt="exempel" />
+            <img
+              src={StegEtt}
+              alt="Steg ett"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Steg 1- Introduktion"
+            />
             <div className="green-postit postit">
               <textarea
                 placeholder="Skriv introduktion..."
@@ -117,7 +123,13 @@ class ContentresanTool extends Component {
           </li>
 
           <li className="circle-items steg-tva">
-            <img src={StegTva} alt="exempel" />
+            <img
+              src={StegTva}
+              alt="Steg två"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Steg 2- Utvärdering"
+            />
 
             <div className="blue-postit postit">
               <textarea
@@ -134,7 +146,13 @@ class ContentresanTool extends Component {
             </div>
           </li>
           <li className="circle-item steg-tre">
-            <img src={StegTre} alt="exempel" />
+            <img
+              src={StegTre}
+              alt="Steg tre"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Steg 3- Köp"
+            />
 
             <div className="orange-postit postit">
               <textarea
@@ -151,7 +169,13 @@ class ContentresanTool extends Component {
             </div>
           </li>
           <li className="circle-item steg-fyra">
-            <img src={StegFyra} alt="exempel" />
+            <img
+              src={StegFyra}
+              alt="Steg fyra"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Steg 4- Efter köp"
+            />
 
             <div className="yellow-postit postit">
               <textarea
@@ -168,7 +192,13 @@ class ContentresanTool extends Component {
             </div>
           </li>
           <li className="circle-item steg-fem">
-            <img src={StegFem} alt="exempel" />
+            <img
+              src={StegFem}
+              alt="Steg fem"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Steg 5- Lojalitets loop"
+            />
 
             <div className="darkblue-postit postit">
               <textarea
@@ -184,7 +214,13 @@ class ContentresanTool extends Component {
             </div>
           </li>
           <li className="circle-item steg-trigger">
-            <img src={TriggerIcon} alt="Trigger" />
+            <img
+              src={TriggerIcon}
+              alt="Trigger"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Trigger"
+            />
 
             <div className="trigger-postit postit">
               <textarea
