@@ -94,6 +94,10 @@ html {
 
 /*NAVBAR*/
 
+.navbar-brand {
+  cursor: default;
+}
+
 .navbar {
   background-color: $navbarColor;
   font-weight: 300; //light font-weight
