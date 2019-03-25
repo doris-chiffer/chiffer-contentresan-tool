@@ -13,6 +13,7 @@ import {
 } from 'reactstrap';
 import HjalpSida from './TutorialPage';
 import DisplayProjectName from './DisplayProjectName';
+import chifferLogo from '../images/logo_contentresan_vit_liten.png';
 
 class ContentResanPage extends Component {
   constructor(props) {
@@ -57,7 +58,13 @@ class ContentResanPage extends Component {
       <div className="contentresan-container">
         <div className="navbar-container">
           <Navbar light expand="md">
-            <NavbarBrand>Chiffer Contentresan</NavbarBrand>
+            <NavbarBrand>
+              <img
+                src={chifferLogo}
+                className="chiffer-logo-black"
+                alt="chiffer-logo"
+              />
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
