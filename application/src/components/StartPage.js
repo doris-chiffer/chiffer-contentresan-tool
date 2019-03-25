@@ -3,7 +3,7 @@ import React from 'react';
 import ProjectNameInput from './ProjectNameInput';
 
 //images
-import chifferLogo from '../images/Contentresan_logo.svg';
+import chifferLogo from '../images/logo_contentresan.png';
 
 function StartPage(props) {
   return (

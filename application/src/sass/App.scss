@@ -96,6 +96,9 @@ html {
 
 .navbar-brand {
   cursor: default;
+  .chiffer-logo-black {
+    height: 6vmin;
+  }
 }
 
 .navbar {
@@ -127,41 +130,6 @@ html {
 
 .padding-bottom-3 {
   padding-bottom: 3px; //Keeps the icons the same line as text
-}
-
-//dropdown menu
-
-li.dropdown {
-  position: static;
-  float: right;
-}
-
-.dropdown-menu {
-  width: 100%;
-  background-color: $dropdownColor !important;
-  top: 93%;
-}
-
-.dropdown-toggle {
-  //changed background color on the dropdown during focus
-
-  &:focus {
-    background-color: $dropdownColor !important;
-    color: $defaultWhite !important;
-  }
-}
-
-.dropdown-menu > li {
-  display: inline-block;
-}
-
-.dropdown-item {
-  display: inline;
-  letter-spacing: 2px;
-
-  &:hover {
-    background-color: transparent;
-  }
 }
 
 /*DESKTOP*/
