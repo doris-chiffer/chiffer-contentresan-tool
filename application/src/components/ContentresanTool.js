@@ -54,47 +54,47 @@ class ContentresanTool extends Component {
   };
 
   //delete functions
-  deleteIntro = event => {
-    event.preventDefault();
-    this.setState({
-      introduktion: '',
-    });
-  };
+  // deleteIntro = event => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     introduktion: '',
+  //   });
+  // };
 
-  deleteUtvardering = event => {
-    event.preventDefault();
-    this.setState({
-      utvardering: '',
-    });
-  };
+  // deleteUtvardering = event => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     utvardering: '',
+  //   });
+  // };
 
-  deleteKop = event => {
-    event.preventDefault();
-    this.setState({
-      kop: '',
-    });
-  };
+  // deleteKop = event => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     kop: '',
+  //   });
+  // };
 
-  deleteEfterKop = event => {
-    event.preventDefault();
-    this.setState({
-      efterKop: '',
-    });
-  };
+  // deleteEfterKop = event => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     efterKop: '',
+  //   });
+  // };
 
-  deleteTrigger = event => {
-    event.preventDefault();
-    this.setState({
-      trigger: '',
-    });
-  };
+  // deleteTrigger = event => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     trigger: '',
+  //   });
+  // };
 
-  deleteLojalitetsLoop = event => {
-    event.preventDefault();
-    this.setState({
-      lojalitetsLoop: '',
-    });
-  };
+  // deleteLojalitetsLoop = event => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     lojalitetsLoop: '',
+  //   });
+  // };
 
   render() {
     return (
@@ -114,11 +114,11 @@ class ContentresanTool extends Component {
                 value={this.state.introduktion}
                 onChange={this.handleChangeIntro}
               />
-              <span>
+              {/* <span>
                 <button onClick={this.deleteIntro}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </span>
+              </span> */}
             </div>
           </li>
 
@@ -138,11 +138,11 @@ class ContentresanTool extends Component {
                 onChange={this.handleChangeUtvardering}
               />
 
-              <span>
+              {/* <span>
                 <button onClick={this.deleteUtvardering}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </span>
+              </span> */}
             </div>
           </li>
           <li className="circle-item steg-tre">
@@ -161,11 +161,11 @@ class ContentresanTool extends Component {
                 onChange={this.handleChangeKop}
               />
 
-              <span>
+              {/* <span>
                 <button onClick={this.deleteKop}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </span>
+              </span> */}
             </div>
           </li>
           <li className="circle-item steg-fyra">
@@ -184,11 +184,11 @@ class ContentresanTool extends Component {
                 onChange={this.handleChangeEfterKop}
               />
 
-              <span>
+              {/* <span>
                 <button onClick={this.deleteEfterKop}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </span>
+              </span> */}
             </div>
           </li>
           <li className="circle-item steg-fem">
@@ -206,11 +206,11 @@ class ContentresanTool extends Component {
                 value={this.state.lojalitetsLoop}
                 onChange={this.handleChangeLojalitetsloop}
               />
-              <span>
+              {/* <span>
                 <button onClick={this.deleteLojalitetsLoop}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </span>
+              </span> */}
             </div>
           </li>
           <li className="circle-item steg-trigger">
@@ -229,11 +229,11 @@ class ContentresanTool extends Component {
                 onChange={this.handleChangeTrigger}
               />
 
-              <span>
+              {/* <span>
                 <button onClick={this.deleteTrigger}>
                   <i className="far fa-trash-alt" />
                 </button>
-              </span>
+              </span> */}
             </div>
           </li>
         </ul>

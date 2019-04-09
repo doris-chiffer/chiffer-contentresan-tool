@@ -18,9 +18,9 @@
 
 /*Post it notes*/
 
-.fa-trash-alt:hover + .note-buttons {
-  color: red !important;
-}
+// .fa-trash-alt:hover + .note-buttons {
+//   color: red !important;
+// }
 
 .postit {
   position: relative;
@@ -46,17 +46,19 @@
   }
 }
 
-.postit:hover > span {
-  opacity: 1 !important;
-}
+//Delete buttons
 
-.postit > span {
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  opacity: 0 !important;
-  transition: opacity 0.25s linear;
-}
+// .postit:hover > span {
+//   opacity: 1 !important;
+// }
+
+// .postit > span {
+//   position: absolute;
+//   bottom: 2px;
+//   right: 2px;
+//   opacity: 0 !important;
+//   transition: opacity 0.25s linear;
+// }
 
 .postit > textarea {
   height: 75%;
@@ -110,7 +112,7 @@ textarea::placeholder {
   bottom: -3.7em;
 }
 
-// make the background fill out whole bottom
+// Make the background fill out whole bottom of page
 .clear {
   padding: 271px;
 }
