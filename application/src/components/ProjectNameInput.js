@@ -20,7 +20,7 @@ class ProjectName extends Component {
       this.setState({ error: 'Vad snäll och skriv ett projektnamn' });
     } else {
       this.props.handleLogin(this.state.projectName);
-      console.log('project:', this.state.projectName);
+      // console.log('project:', this.state.projectName);
     }
   };
 
