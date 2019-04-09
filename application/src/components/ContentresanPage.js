@@ -43,6 +43,8 @@ class ContentResanPage extends Component {
         pdf.addImage(imgData, 'PNG', -100, 10, 500, 200); // image, format, x-axis, y-axis, width, height
       } else if (window.matchMedia('(min-width:2000px)').matches) {
         pdf.addImage(imgData, 'PNG', 0, 10, 300, 200); // image, format, x-axis, y-axis, width, height
+      } else if (window.matchMedia('(min-width:1300px)').matches) {
+        pdf.addImage(imgData, 'PNG', 20, 10, 250, 200); // image, format, x-axis, y-axis, width, height
       } else if (window.matchMedia('(min-width:1024px)').matches) {
         pdf.addImage(imgData, 'PNG', 50, 10, 190, 200); // image, format, x-axis, y-axis, width, height
       } else {
