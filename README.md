@@ -1,4 +1,4 @@
-##Chiffer Contentresan Tool
+# Chiffer Contentresan Tool
 ### Available Scripts
 cd into the application folder
 Run <bold>npm install</bold>
